@@ -1,0 +1,19 @@
+name: todo_list_angular
+version: 0.1.0
+author: Luiz Mineo <luiz.mineo@gmail.com>
+description: A simple todo-list application
+homepage: http://luizmineo.github.io/redstone.dart
+environment:
+  sdk: '>=1.4.0 <2.0.0'
+dependencies:
+  redstone: '>=0.5.2 <1.0.0'
+  mongo_dart: '>= 0.1.40 <0.2.0'
+  connection_pool: any
+  crypto: any
+  shelf_static: any
+  uuid: any
+  browser: any
+  bootstrap_for_pub: any
+  angular: any
+transformers:
+- angular

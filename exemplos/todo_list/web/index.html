@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list</title>
+    
+    <link rel="stylesheet" href="packages/bootstrap_for_pub/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+ 
+  <body>   
+  
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">Todo-list</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="glyphicon glyphicon-log-out" href="#" id="logoutBtn"> Sair</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="sr-only" for="newtask">Tarefa</label>
+              <input type="text" class="form-control" id="newtask" placeholder="Tarefa" style="width:400px">
+            </div>
+            <button type="submit" class="btn btn-primary" id="newtaskBtn">Adicionar</button>
+          </form>
+        </div>  
+      </div>
+      <div class="row" style="margin-top:30px;">
+        <div class="col-xs-12">
+          <div class="bg-primary" style="padding: 10px 15px">Tarefas</div>
+          <div class="list-group" id="taskList"></div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="application/dart" src="index.dart"></script>
+    <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

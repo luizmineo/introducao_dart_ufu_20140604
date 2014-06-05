@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list: login</title>
+    
+    <link rel="stylesheet" href="packages/bootstrap_for_pub/3.1.0/css/bootstrap.min.css">
+  </head>
+ 
+  <body>   
+  
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">Todo-list</a>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-offset-2 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">Efetuar Login</div>
+            <div class="panel-body">
+              <div id="loginErrorPanel" style="display:none">
+                <div class="alert alert-danger" id="loginErrorMsg"></div>
+              </div>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="username" class="col-sm-2 control-label">Usuário</label>
+                  <div class="col-sm-10"><input type="text" class="form-control" name="username" id="username" placeholder="usuário"></div>
+                </div>
+                <div class="form-group">
+                  <label for="password" class="col-sm-2 control-label">Senha</label>
+                  <div class="col-sm-10"><input type="password" class="form-control" name="password" id="password" placeholder="senha"></div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10"><button class="btn btn-primary btn-block" id="sendBtn">Entrar</button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">Cadastrar Usuário</div>
+            <div class="panel-body">
+              <div id="newUserErrorPanel" style="display:none">
+                <div class="alert alert-danger" id="newUserErrorMsg"></div>
+              </div>
+              <div id="newUserCreated" style="display:none">
+                <div class="alert alert-success">Usuário criado com sucesso!</div>
+              </div>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="user" class="col-sm-2 control-label">Nome</label>
+                  <div class="col-sm-10"><input type="text" class="form-control" name="user" id="newUser" placeholder="nome"></div>
+                </div>
+                <div class="form-group">
+                  <label for="username" class="col-sm-2 control-label">Usuário</label>
+                  <div class="col-sm-10"><input type="text" class="form-control" name="username" id="newUsername" placeholder="usuário"></div>
+                </div>
+                <div class="form-group">
+                  <label for="password" class="col-sm-2 control-label">Senha</label>
+                  <div class="col-sm-10"><input type="password" class="form-control" name="password" id="newPassword" placeholder="senha"></div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10"><button class="btn btn-primary btn-block" id="sendNewUserBtn">Entrar</button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="application/dart" src="login.dart"></script>
+    <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
+    <script src="packages/browser/dart.js"></script>
+  </body>
+  
+</html>

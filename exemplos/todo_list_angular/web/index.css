@@ -1,0 +1,11 @@
+.checked {
+  color:#02A10F; 
+  font-size:20px;
+  cursor: pointer;
+}
+
+.unchecked {
+  color:#428bca; 
+  font-size:20px;
+  cursor: pointer;
+}
